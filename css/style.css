@@ -1,0 +1,94 @@
+.head-container
+{
+    background-color: darkgrey;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    position: fixed;
+    width: 100%;
+}
+
+.brand-logol{
+    width: 20w;
+    height: 12vh;
+}
+
+.nav{
+    list-style: none;
+}
+
+.anv-link{
+
+
+}
+
+
+
+
+
+
+
+main{
+    background-image: url();
+    height: ;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.hero-mask{
+    height: 45vh;
+    background-color: whitesmoke
+}
+
+section.h1{
+    margin: 0;
+}
+
+
+.hero-mask h1{
+    padding-top: 30vh;
+    color: honeydew;
+    font-size: 5em;
+    padding-bottom: 0.5em;
+}
+
+.hero-mask a{
+    background-color: orange;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.hero-mask a:hover{
+    background-color: coral;
+    color: darkcyan; 
+}
+
+
+.paper-layout{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: blueviolet;
+}
+
+.paper-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paper{
+    background-color: white;
+    height: 60vh;
+    width: 25vh;
+    box-shadow: 5px 5px 25px gray;
+}
+
+.paper img{
+    
+}
+
