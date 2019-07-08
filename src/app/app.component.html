@@ -1,0 +1,69 @@
+<mat-toolbar>GOOGLE KEEP</mat-toolbar>
+
+<!-- Expansion panel -->
+<div>
+
+    <mat-expansion-panel class="noteinputcontainer">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Personal Favourites!
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+
+
+
+        <div class="notesinput">
+
+            <mat-form-field>
+                <input [(ngModel)]="note.title" matInput placeholder="input">
+            </mat-form-field>
+            <mat-form-field>
+                <textarea [(ngModel)]="note.text" matInput placeholder="textarea"></textarea>
+            </mat-form-field>
+
+
+
+
+
+
+            <mat-form-field class="example-full-width">
+                <input [(ngModel)]="note.text2" matInput placeholder="Favorite food" value="Briyani">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <input [(ngModel)]="note.text3" matInput placeholder="Favorite Place" value="Ooty">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <input [(ngModel)]="note.text4" matInput placeholder="Favorite Game" value="Football">
+
+            </mat-form-field>
+            <mat-slider></mat-slider>
+
+            <mat-form-field class="example-full-width">
+                <textarea [(ngModel)]="note.text5" matInput placeholder="Leave a comment"></textarea>
+            </mat-form-field>
+
+
+
+        </div>
+
+
+        <button (click)="takeNotes()" mat-button>SAVE</button>
+
+    </mat-expansion-panel>
+
+</div>
+
+<mat-card class="mat-head" *ngFor="let mynote of noteList">
+
+    <mat-card-title>{{mynote.title}}</mat-card-title>
+    <mat-card-content>{{mynote.text}}</mat-card-content>
+    <mat-card-content>{{mynote.text2}}</mat-card-content>
+    <mat-card-content>{{mynote.text3}}</mat-card-content>
+    <mat-card-content>{{mynote.text4}}</mat-card-content>
+    <mat-card-content>{{mynote.text5}}</mat-card-content>
+
+
+</mat-card>
