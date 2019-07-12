@@ -1,0 +1,33 @@
+<!-- Label to display any error messages -->
+<label class="error-message">{{ errMessage }}</label>
+
+<!-- Expansion panel to add new notes -->
+
+<div>
+
+    <mat-expansion-panel class="noteinputcontainer">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                NEW NOTES
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+
+
+        <div class="notesinput">
+
+            <mat-form-field>
+                <input  matInput placeholder="input">
+            </mat-form-field>
+            <mat-form-field>
+                <textarea matInput placeholder="textarea"></textarea>
+            </mat-form-field>
+
+        </div>
+
+    </mat-expansion-panel>
+
+</div>
+
+
+<!-- Load and display the collection of notes from server as Material Cards with card title set to note title and card content set to note text  -->

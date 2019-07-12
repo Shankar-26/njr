@@ -1,0 +1,35 @@
+<form class="example-form" [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+
+    <mat-card><b>LOGIN</b>
+
+        <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="UserName" formControlName="username" autocomplete="on">
+            <small *ngIf="username.invalid && (username.dirty || username.touched)">
+                Username is mandatory.
+            </small>
+
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput type="password" placeholder="Password" formControlName="password" autocomplete="on">
+            <small *ngIf="password.invalid && (password.dirty || password.touched)">
+                <small *ngIf="password.errors.required">
+                    Password cannot be blank.
+                </small>
+                <small *ngIf="password.errors.minlength">
+                    Password Min length is 6.
+                </small>
+            </small>
+
+        </mat-form-field>
+
+        <div>
+            <!--<input mat-button type="submit" [disabled]="!loginForm.valid" value="Submit">-->
+            <button mat-button type="submit" [disabled]="!loginForm.valid" value="Submit">SUBMIT </button>
+
+        </div>
+
+
+    </mat-card>
+
+</form>
